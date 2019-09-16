@@ -15,7 +15,7 @@ class Challenge3(unittest.TestCase):
     def tearDown(self) -> None:
         self.driver.close()
 
-    def test_challenge3git (self):
+    def test_challenge3(self):
         # launch the site
         self.driver.get("https://www.copart.com")
         self.assertIn("Copart USA", self.driver.title)
